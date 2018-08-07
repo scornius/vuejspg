@@ -7,9 +7,11 @@
 <Hello/>
 <MyLink/>
 <CoinFlip/>
+<DiceRoll/>
+<EnterYourName/>
 -->
 
-    <DiceRoll/>
+    <ChooseYourGender/>
 
   </div>
 </template>
@@ -19,10 +21,14 @@ import Hello from './components/HelloWorld'
 import MyLink from './components/MyLink'
 import CoinFlip from './components/CoinFlip'
 import DiceRoll from './components/DiceRoll'
+import EnterYourName from './components/EnterYourName'
+import ChooseYourGender from './components/ChooseYourGender'
 
 export default {
   name: 'App',
   components: {
+    ChooseYourGender,
+    EnterYourName,
     DiceRoll,
     CoinFlip,
     MyLink,

@@ -8,9 +8,10 @@
 <script>
 export default {
   name: 'CoinFlip',
-  data () {
-    return {
-      heads: Math.random() > 0.5
+  // cached based on their dependencies
+  computed: {
+    heads: function () {
+      return Math.random() > 0.5
     }
   }
 }
