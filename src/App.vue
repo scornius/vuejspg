@@ -1,17 +1,27 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <h1>Vue.js</h1>
     <router-view/>
+
     <Hello/>
+<!--
+   <MyLink/>
+   <CoinFlip/>
+-->
+
   </div>
 </template>
 
 <script>
 import Hello from './components/HelloWorld'
+import MyLink from './components/MyLink'
+import CoinFlip from './components/CoinFlip'
 
 export default {
   name: 'App',
   components: {
+    CoinFlip,
+    MyLink,
     Hello
   }
 }
@@ -23,7 +33,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #0da006;
   margin-top: 60px;
 }
 </style>
