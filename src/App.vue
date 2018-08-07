@@ -5,6 +5,7 @@
 
 <!--
 <Hello/>
+<FancyLabel title="Fancy Headline"/>
 <MyLink/>
 <CoinFlip/>
 <DiceRoll/>
@@ -13,7 +14,7 @@
 <SelectYourHobbies/>
 -->
 
-    <SelectYourHobbies/>
+    <FancyLabel title="Fancy Headline"/>
 
   </div>
 </template>
@@ -26,10 +27,12 @@ import DiceRoll from './components/DiceRoll'
 import EnterYourName from './components/EnterYourName'
 import ChooseYourGender from './components/ChooseYourGender'
 import SelectYourHobbies from './components/SelectYourHobbies'
+import FancyLabel from './components/FancyLabel'
 
 export default {
   name: 'App',
   components: {
+    FancyLabel,
     SelectYourHobbies,
     ChooseYourGender,
     EnterYourName,

@@ -1,6 +1,7 @@
 <template>
   <div>
     <input title="Name" v-model="myValue"/><br/>
+    <input title="Name" v-model.lazy="myValue"/><br/>
     <span>Your name: {{myValue}}</span>
   </div>
 </template>
