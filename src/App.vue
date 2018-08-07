@@ -3,11 +3,13 @@
     <h1>Vue.js</h1>
     <router-view/>
 
-    <Hello/>
 <!--
-   <MyLink/>
-   <CoinFlip/>
+<Hello/>
+<MyLink/>
+<CoinFlip/>
 -->
+
+    <DiceRoll/>
 
   </div>
 </template>
@@ -16,10 +18,12 @@
 import Hello from './components/HelloWorld'
 import MyLink from './components/MyLink'
 import CoinFlip from './components/CoinFlip'
+import DiceRoll from './components/DiceRoll'
 
 export default {
   name: 'App',
   components: {
+    DiceRoll,
     CoinFlip,
     MyLink,
     Hello
