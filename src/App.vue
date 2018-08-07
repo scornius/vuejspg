@@ -9,9 +9,11 @@
 <CoinFlip/>
 <DiceRoll/>
 <EnterYourName/>
+<ChooseYourGender/>
+<SelectYourHobbies/>
 -->
 
-    <ChooseYourGender/>
+    <SelectYourHobbies/>
 
   </div>
 </template>
@@ -23,10 +25,12 @@ import CoinFlip from './components/CoinFlip'
 import DiceRoll from './components/DiceRoll'
 import EnterYourName from './components/EnterYourName'
 import ChooseYourGender from './components/ChooseYourGender'
+import SelectYourHobbies from './components/SelectYourHobbies'
 
 export default {
   name: 'App',
   components: {
+    SelectYourHobbies,
     ChooseYourGender,
     EnterYourName,
     DiceRoll,
@@ -39,9 +43,6 @@ export default {
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #0da006;
   margin-top: 60px;
