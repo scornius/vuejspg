@@ -14,7 +14,7 @@
 <SelectYourHobbies/>
 -->
 
-    <FancyLabel title="Fancy Headline"/>
+    <Parent v-on:myevent="console.log('soso')"/>
 
   </div>
 </template>
@@ -28,10 +28,12 @@ import EnterYourName from './components/EnterYourName'
 import ChooseYourGender from './components/ChooseYourGender'
 import SelectYourHobbies from './components/SelectYourHobbies'
 import FancyLabel from './components/FancyLabel'
+import Parent from './components/Parent'
 
 export default {
   name: 'App',
   components: {
+    Parent,
     FancyLabel,
     SelectYourHobbies,
     ChooseYourGender,
