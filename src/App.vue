@@ -12,9 +12,15 @@
 <EnterYourName/>
 <ChooseYourGender/>
 <SelectYourHobbies/>
+<Parent/>
+<ErrorMessage>
+  <i slot="detail">Something is amiss</i>
+  <b slot="message">Ooopsi</b>
+</ErrorMessage>
+<GenderAndHobbies/>
 -->
 
-    <Parent v-on:myevent="console.log('soso')"/>
+  <Hello/>
 
   </div>
 </template>
@@ -29,10 +35,14 @@ import ChooseYourGender from './components/ChooseYourGender'
 import SelectYourHobbies from './components/SelectYourHobbies'
 import FancyLabel from './components/FancyLabel'
 import Parent from './components/Parent'
+import ErrorMessage from './components/ErrorMessage'
+import GenderAndHobbies from './components/GenderAndHobbies'
 
 export default {
   name: 'App',
   components: {
+    GenderAndHobbies,
+    ErrorMessage,
     Parent,
     FancyLabel,
     SelectYourHobbies,
