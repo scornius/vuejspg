@@ -5,7 +5,7 @@
     <input type="radio" id="f" v-model="gender" value="f"/>
     <label for="f">Female</label>
     <br/>
-    <span v-bind:class="{ pink: gender === 'f', blue: gender !== 'm' }">XXXXXXXXXX</span>
+    <span v-bind:class="{ pink: gender === 'f', blue: gender !== 'f' }">XXXXXXXXXX</span>
   </div>
 </template>
 
